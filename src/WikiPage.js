@@ -31,7 +31,13 @@ function WikiPage(){
                 {error ? (
                     <p>{error}</p>
                 ) : data ? (
-                    <p>{data}</p>
+                    <div>
+                        <p>종류: {data.카테고리}</p>
+                        <p>빌드 이름: {data.빌드이름}</p>
+                        <p>가방 정보: {data.가방정보.가방1}</p>
+                        <p>가방 정보: {data.가방정보.가방2}</p>
+                        <p>가방 정보: {data.가방정보.가방3}</p>
+                    </div>
                 ) : (
                     <p>데이터를 로드 중입니다.</p>
                 )}
